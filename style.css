@@ -1,0 +1,116 @@
+:root {
+  --blueColor: #99baed;
+  --textColor: #163561;
+  --yellowColor: #fbb400;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  /* object-fit: cover; */
+}
+
+.container {
+  padding-left: 150px;
+  padding-right: 150px;
+}
+
+ul,
+li {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+
+.row {
+    display: flex;
+    margin-top: 30px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.button {
+    color: white;
+    background-color: var(--blueColor);
+    padding: 20px;
+    border-radius: 12px;
+    border: none;
+    outline: none;
+    box-shadow: #cdd4df 0px 6px 5px 2px;
+}
+
+button:focus {
+    outline: none;
+}
+
+.col-3 {
+    flex-basis: 33.33%;
+    max-width: 33.33%;
+    width: 33.33%;
+}
+
+.col-4 {
+    flex-basis: 25%;
+    max-width: 25%;
+    width: 25%;
+}
+
+.col-6 {
+    flex-basis: 50%;
+    max-width: 50%;
+    width: 50%;
+}
+.col-7 {
+    flex-basis:60%;
+    max-width: 60%;
+    width: 60%;
+}
+.col-12 {
+    flex-basis: 100%;
+    max-width: 100%;
+    width: 100%;
+}
+
+.nav {
+    display: flex;
+    height: 50px;
+    /* margin-top: 10px; */
+}
+
+.navLogo {
+    margin: 0;
+    margin-top: 10px;
+}
+
+.logo {
+    width: 60px;
+    height: 50px;
+}
+
+.logoText {
+    width: 50px;
+    height: 20px;
+    margin-top: 20px;
+    margin-left: -16px;
+}
+
+.navIcon {
+    display: flex;
+    justify-content: space-between;
+    width: 100px;
+    margin-left: 320px;
+    margin-right: 75px;
+}
+
+.navLinks {
+    margin-top: 20px;
+    color: var(--textColor);
+    margin-left: 25px;
+    margin-right: 19px;
+}
