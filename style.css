@@ -1,19 +1,19 @@
+@import url("https://fonts.googleapis.com/css2?family=Catamaran:wght@500&display=swap");
+
 :root {
   --blueColor: #99baed;
   --textColor: #163561;
   --yellowColor: #fbb400;
+  --fontFamily: "Catamaran", sans-serif;
 }
 
-*{
-    box-sizing: border-box;
+* {
+  box-sizing: border-box;
+  font-family: "Catamaran", sans-serif;
 }
 
 a {
   text-decoration: none;
-}
-
-img {
-  /* object-fit: cover; */
 }
 
 .container {
@@ -29,88 +29,206 @@ li {
 }
 
 .row {
-    display: flex;
-    margin-top: 30px;
-    flex-wrap: wrap;
-    justify-content: space-between;
+  display: flex;
+  margin-top: 30px;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .button {
-    color: white;
-    background-color: var(--blueColor);
-    padding: 20px;
-    border-radius: 12px;
-    border: none;
-    outline: none;
-    box-shadow: #cdd4df 0px 6px 5px 2px;
+  color: white;
+  background-color: var(--blueColor);
+  /* padding: 20px; */
+  border-radius: 12px;
+  border: none;
+  outline: none;
+  box-shadow: #cdd4df 0px 6px 5px 2px;
+  cursor: pointer;
 }
 
 button:focus {
-    outline: none;
+  outline: none;
 }
 
 .col-3 {
-    flex-basis: 33.33%;
-    max-width: 33.33%;
-    width: 33.33%;
+  flex-basis: 33.33%;
+  max-width: 33.33%;
+  width: 33.33%;
 }
 
 .col-4 {
-    flex-basis: 25%;
-    max-width: 25%;
-    width: 25%;
+  flex-basis: 25%;
+  max-width: 25%;
+  width: 25%;
 }
 
 .col-6 {
-    flex-basis: 50%;
-    max-width: 50%;
-    width: 50%;
+  flex-basis: 50%;
+  max-width: 50%;
+  width: 50%;
 }
+
 .col-7 {
-    flex-basis:60%;
-    max-width: 60%;
-    width: 60%;
+  flex-basis: 60%;
+  max-width: 60%;
+  width: 60%;
 }
+
 .col-12 {
-    flex-basis: 100%;
-    max-width: 100%;
-    width: 100%;
+  flex-basis: 100%;
+  max-width: 100%;
+  width: 100%;
 }
 
 .nav {
-    display: flex;
-    height: 50px;
-    /* margin-top: 10px; */
+  display: flex;
+  height: 50px;
+  /* margin-top: 10px; */
+  justify-content: center;
+  font-family: "Catamaran", sans-serif;
 }
 
 .navLogo {
-    margin: 0;
-    margin-top: 10px;
+  margin: 0;
+  margin-top: 10px;
 }
 
 .logo {
-    width: 60px;
-    height: 50px;
+  width: 60px;
+  height: 50px;
 }
 
 .logoText {
-    width: 50px;
-    height: 20px;
-    margin-top: 20px;
-    margin-left: -16px;
+  width: 50px;
+  height: 20px;
+  margin-top: 20px;
+  margin-left: -16px;
 }
 
 .navIcon {
-    display: flex;
-    justify-content: space-between;
-    width: 100px;
-    margin-left: 320px;
-    margin-right: 75px;
+  display: flex;
+  justify-content: space-between;
+  width: 100px;
+  margin-right: 60px;
+  color: var(--blueColor);
+  margin-top: 45px;
+}
+
+#userIcon {
+  font-size: 25px;
+}
+
+#notificationIcon {
+  font-size: 25px;
 }
 
 .navLinks {
-    margin-top: 20px;
-    color: var(--textColor);
-    margin-left: 25px;
-    margin-right: 19px;
+  margin-top: 20px;
+  color: var(--textColor);
+  margin-left: 82px;
+  margin-right: 250px;
+  font-size: 20px;
+}
+
+.navButton {
+  width: 115px;
+  margin-top: 20px;
+}
+
+.navBtn {
+  width: 145px;
+  height: 70px;
+}
+
+.navBtnText {
+  font-size: 20px;
+  color: #fff;
+}
+
+.responsiveNav {
+  /* display: none !important; */
+  display: flex;
+}
+
+.openNavBtn {
+  background-color: var(--blueColor);
+  width: 35px;
+  height: 25px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.openNavBtn:active {
+  border: #163561 solid;
+  transition: border 5s ease-in-out 0.5s;
+}
+
+@media (max-width: 500px) {
+  .nav {
+    display: none;
+  }
+
+  .reponsiveNav {
+    display: block !important;
+    margin-top: 10px;
+  }
+
+  .container {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .navLogo {
+    /* margin-top: 10px; */
+    margin: 0;
+  }
+
+  .logo {
+    width: 30px;
+    height: 20px;
+  }
+
+  .logoText {
+    width: 30px;
+    height: 10px;
+    margin-left: -10px;
+  }
+
+  .navIcon {
+    margin-left: 40px;
+    margin-top: 15px;
+    width: 50px;
+  }
+
+  #userIcon {
+    font-size: 19px;
+  }
+
+  #notificationIcon {
+    font-size: 19px;
+  }
+
+  .navButton {
+    height: auto;
+    margin-top: 0;
+  }
+
+  .navBtn {
+    width: 70px;
+    height: 30px;
+    margin-top: 10px;
+  }
+
+  .navBtnText {
+    font-size: 8px;
+  }
+
+  .openNavBtn {
+    margin-top: 10px;
+  }
+
+  .navLinks {
+    display: none;
+  }
+
 }
