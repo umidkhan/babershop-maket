@@ -81,9 +81,9 @@ button:focus {
 }
 
 .nav {
+  width: 100%;
   display: flex;
   height: 50px;
-  /* margin-top: 10px; */
   justify-content: center;
   font-family: "Catamaran", sans-serif;
 }
@@ -123,6 +123,7 @@ button:focus {
 }
 
 .navLinks {
+  /* position: absolute; */
   margin-top: 20px;
   color: var(--textColor);
   margin-left: 82px;
@@ -146,8 +147,8 @@ button:focus {
 }
 
 .responsiveNav {
-  /* display: none !important; */
   display: flex;
+  margin-top: -180px;
 }
 
 .openNavBtn {
@@ -158,77 +159,85 @@ button:focus {
   cursor: pointer;
 }
 
-.openNavBtn:active {
-  border: #163561 solid;
-  transition: border 5s ease-in-out 0.5s;
+.openedNavLinks {
+  /* position: absolute; */
+  margin-top: -30px;
+  width: 100%;
+  color: var(--textColor);
+  margin-left: -40px;
+  margin-right: 250px;
+  font-size: 20px;
+  flex-wrap: wrap;
+  background-color: var(--blueColor);
+  border-radius: 20px;
 }
 
-@media (max-width: 500px) {
+@media screen and (max-width: 460px) {
   .nav {
-    display: none;
+    margin-top: -180px;
   }
 
-  .reponsiveNav {
-    display: block !important;
-    margin-top: 10px;
+  .responsiveNav {
+    margin-top: 130px;
   }
 
   .container {
-    padding-left: 20px;
-    padding-right: 20px;
-  }
-
-  .navLogo {
-    /* margin-top: 10px; */
-    margin: 0;
+    padding-left: 15px;
+    padding-right: 15px;
   }
 
   .logo {
-    width: 30px;
-    height: 20px;
+    width: 40px;
+    height: 30px;
   }
 
   .logoText {
-    width: 30px;
-    height: 10px;
-    margin-left: -10px;
-  }
-
-  .navIcon {
-    margin-left: 40px;
-    margin-top: 15px;
-    width: 50px;
-  }
-
-  #userIcon {
-    font-size: 19px;
-  }
-
-  #notificationIcon {
-    font-size: 19px;
-  }
-
-  .navButton {
-    height: auto;
-    margin-top: 0;
-  }
-
-  .navBtn {
-    width: 70px;
-    height: 30px;
-    margin-top: 10px;
-  }
-
-  .navBtnText {
-    font-size: 8px;
-  }
-
-  .openNavBtn {
-    margin-top: 10px;
+    width: 37px;
+    height: 15px;
+    margin-left: -12px;
   }
 
   .navLinks {
-    display: none;
+    position: absolute;
+    top: -200px;
   }
 
+  .navIcon {
+    margin-top: 30px;
+    margin-left: 20px;
+  }
+
+  #userIcon {
+    font-size: 15px;
+  }
+
+  #notificationIcon {
+    font-size: 15px;
+  }
+
+  .openedNavLinks {
+    position: absolute;
+    margin-top: -200px;
+    margin-left: -23px;
+    height: 50px;
+    font-size: 15px;
+  }
+
+  .navBtn {
+    width: 80px;
+    height: 35px;
+  }
+
+  .navBtnText {
+    font-size: 10px;
+  }
+
+  .openNavBtn {
+    margin-top: 25px;
+  }
 }
+
+/* .openNavBtn:active {
+  border: #163561 solid;
+  transition: border 5s ease-in-out 0.5s;
+} */
