@@ -236,7 +236,36 @@ button:focus {
   }
 }
 
-/* .openNavBtn:active {
-  border: #163561 solid;
-  transition: border 5s ease-in-out 0.5s;
-} */
+@media screen and (max-width: 768px) {
+  /* .nav {
+    margin-top: -180px;
+  } */
+
+  .responsiveNav {
+    margin-top: -180px;
+  }
+
+  .container {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
+  .navLogo {
+    display: flex;
+  }
+
+  .logoText {
+    margin-top: 28px;
+    margin-left: -13px;
+  }
+
+  .navLinks {
+    margin-right: 48px;
+    font-size: 15px;
+  }
+
+  .navIcon {
+    gap: 30px;
+    margin-right: 20px;
+  }
+}
