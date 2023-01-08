@@ -170,7 +170,17 @@ button:focus {
   /* border-radius: 20px; */
 }
 
-@media screen and (max-width: 576px) {
+@media (min-width: 500px) {
+  .nav {
+    display: none;
+  }
+
+  /* .responsiveNav {
+    margin-top: 130px;
+  } */
+}
+
+@media (min-width: 576px) {
   .nav {
     margin-top: -180px;
   }
@@ -236,7 +246,7 @@ button:focus {
   }
 }
 
-@media screen and (max-width: 768px) {
+@media (min-width: 768px) {
   /* .nav {
     margin-top: -180px;
   } */
@@ -267,5 +277,49 @@ button:focus {
   .navIcon {
     gap: 30px;
     margin-right: 20px;
+  }
+}
+
+@media (min-width: 992px) {
+  .responsiveNav {
+    /* margin-top: -180px; */
+    display: none;
+  }
+
+  .container {
+    padding-left: 80px;
+    padding-right: 80px;
+  }
+
+  .navLogo {
+    display: flex;
+  }
+
+  .logoText {
+    margin-top: 30px;
+    margin-left: -14px;
+  }
+
+  .navLinks {
+    margin-right: 120px;
+  }
+
+  .navIcon {
+    gap: 30px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .navLogo {
+    display: flex;
+  }
+
+  .logoText {
+    margin-top: 30px;
+    margin-left: -14px;
+  }
+
+  .navIcon {
+    gap: 30px;
   }
 }
